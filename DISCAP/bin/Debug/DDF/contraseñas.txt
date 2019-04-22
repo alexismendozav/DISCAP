@@ -1,0 +1,11 @@
+CCP User
+nombre:izamag-ca
+contraseña: interfaces2019
+	
+root
+nombre:gerson
+contraseña:interfaces2019
+
+Super User
+nombre:izamag
+contraseña:interfaces2019

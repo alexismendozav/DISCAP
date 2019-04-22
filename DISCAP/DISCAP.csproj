@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ABD4A7C-9825-4F13-9BFF-EEF475059344}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DISCAP</RootNamespace>
+    <AssemblyName>DISCAP</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Building.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Building.Designer.cs">
+      <DependentUpon>Building.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Calculo_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Calculo_1.Designer.cs">
+      <DependentUpon>Calculo_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Circulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Circulo.Designer.cs">
+      <DependentUpon>Adivina_El_Circulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Cuadrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Cuadrado.Designer.cs">
+      <DependentUpon>Adivina_El_Cuadrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Rectangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Rectangulo.Designer.cs">
+      <DependentUpon>Adivina_El_Rectangulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Triangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Adivina_El_Triangulo.Designer.cs">
+      <DependentUpon>Adivina_El_Triangulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Discriminacion_de_formas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Discriminacion_de_formas.Designer.cs">
+      <DependentUpon>Discriminacion_de_formas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Circulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Circulo.Designer.cs">
+      <DependentUpon>Formas_Circulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Elegir_ejercicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Elegir_ejercicio.Designer.cs">
+      <DependentUpon>Elegir_ejercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Cuadrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Cuadrado.Designer.cs">
+      <DependentUpon>Formas_Cuadrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Rectangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Rectangulo.Designer.cs">
+      <DependentUpon>Formas_Rectangulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Triangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Formas_Triangulo.Designer.cs">
+      <DependentUpon>Formas_Triangulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\GoodorBad_Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\GoodorBad_Job.Designer.cs">
+      <DependentUpon>GoodorBad_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Mostrar_Imagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISCRIMINACION DE FORMAS\Mostrar_Imagenes.Designer.cs">
+      <DependentUpon>Mostrar_Imagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESCRITURA\Escritura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESCRITURA\Escritura.Designer.cs">
+      <DependentUpon>Escritura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESCRITURA\EscrituraVocales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESCRITURA\EscrituraVocales.Designer.cs">
+      <DependentUpon>EscrituraVocales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESCRITURA\ReconocerNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESCRITURA\ReconocerNombre.Designer.cs">
+      <DependentUpon>ReconocerNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EVALUACION\Evaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVALUACION\Evaluacion.Designer.cs">
+      <DependentUpon>Evaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EVALUACION\EvaluarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EVALUACION\EvaluarAlumno.Designer.cs">
+      <DependentUpon>EvaluarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad3.Designer.cs">
+      <DependentUpon>Actividad3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad1.Designer.cs">
+      <DependentUpon>Actividad1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad2.Designer.cs">
+      <DependentUpon>Actividad2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad4.Designer.cs">
+      <DependentUpon>Actividad4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad5.Designer.cs">
+      <DependentUpon>Actividad5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LATERALIDAD\Actividad6.Designer.cs">
+      <DependentUpon>Actividad6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURA\Lectura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LECTURA\Lectura.Designer.cs">
+      <DependentUpon>Lectura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LECTURA\RepasoLetras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LECTURA\RepasoLetras.Designer.cs">
+      <DependentUpon>RepasoLetras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEMORIA AUDITIVA\Ejercicio1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEMORIA AUDITIVA\Ejercicio1.Designer.cs">
+      <DependentUpon>Ejercicio1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEMORIA AUDITIVA\Sonidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEMORIA AUDITIVA\Sonidos.Designer.cs">
+      <DependentUpon>Sonidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOCIONES TEMPORALES\Dias_de_la_semana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOCIONES TEMPORALES\Dias_de_la_semana.Designer.cs">
+      <DependentUpon>Dias_de_la_semana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOCIONES TEMPORALES\Dia_Noche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOCIONES TEMPORALES\Dia_Noche.Designer.cs">
+      <DependentUpon>Dia_Noche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOCIONES TEMPORALES\Ejercicios_Neuroespaciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOCIONES TEMPORALES\Ejercicios_Neuroespaciales.Designer.cs">
+      <DependentUpon>Ejercicios_Neuroespaciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRENUMERICOS\Dimensiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRENUMERICOS\Dimensiones.Designer.cs">
+      <DependentUpon>Dimensiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRENUMERICOS\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRENUMERICOS\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRENUMERICOS\LlenoVacio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRENUMERICOS\LlenoVacio.Designer.cs">
+      <DependentUpon>LlenoVacio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRENUMERICOS\Tamaño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRENUMERICOS\Tamaño.Designer.cs">
+      <DependentUpon>Tamaño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReproduceVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReproduceVideo.Designer.cs">
+      <DependentUpon>ReproduceVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionAzul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionAzul.Designer.cs">
+      <DependentUpon>EjercicioSensopercepcionAzul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionRojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionRojo.Designer.cs">
+      <DependentUpon>EjercicioSensopercepcionRojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionRosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionRosa.Designer.cs">
+      <DependentUpon>EjercicioSensopercepcionRosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionVerde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\EjercicioSensopercepcionVerde.Designer.cs">
+      <DependentUpon>EjercicioSensopercepcionVerde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\InicioSensopercepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\InicioSensopercepcion.Designer.cs">
+      <DependentUpon>InicioSensopercepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionAmarillo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionAmarillo.Designer.cs">
+      <DependentUpon>IntroduccionAmarillo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionAzul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionAzul.Designer.cs">
+      <DependentUpon>IntroduccionAzul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionBlanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionBlanco.Designer.cs">
+      <DependentUpon>IntroduccionBlanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionCafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionCafe.Designer.cs">
+      <DependentUpon>IntroduccionCafe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionMorado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionMorado.Designer.cs">
+      <DependentUpon>IntroduccionMorado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionNaranja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionNaranja.Designer.cs">
+      <DependentUpon>IntroduccionNaranja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionNegro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionNegro.Designer.cs">
+      <DependentUpon>IntroduccionNegro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionRojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionRojo.Designer.cs">
+      <DependentUpon>IntroduccionRojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionRosa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionRosa.Designer.cs">
+      <DependentUpon>IntroduccionRosa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionVerde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENSOPERCEPCION\IntroduccionVerde.Designer.cs">
+      <DependentUpon>IntroduccionVerde.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Building.resx">
+      <DependentUpon>Building.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Adivina_El_Circulo.resx">
+      <DependentUpon>Adivina_El_Circulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Adivina_El_Cuadrado.resx">
+      <DependentUpon>Adivina_El_Cuadrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Adivina_El_Rectangulo.resx">
+      <DependentUpon>Adivina_El_Rectangulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Adivina_El_Triangulo.resx">
+      <DependentUpon>Adivina_El_Triangulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Discriminacion_de_formas.resx">
+      <DependentUpon>Discriminacion_de_formas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Formas_Circulo.resx">
+      <DependentUpon>Formas_Circulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Elegir_ejercicio.resx">
+      <DependentUpon>Elegir_ejercicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Formas_Cuadrado.resx">
+      <DependentUpon>Formas_Cuadrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Formas_Rectangulo.resx">
+      <DependentUpon>Formas_Rectangulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Formas_Triangulo.resx">
+      <DependentUpon>Formas_Triangulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\GoodorBad_Job.resx">
+      <DependentUpon>GoodorBad_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISCRIMINACION DE FORMAS\Mostrar_Imagenes.resx">
+      <DependentUpon>Mostrar_Imagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESCRITURA\Escritura.resx">
+      <DependentUpon>Escritura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESCRITURA\EscrituraVocales.resx">
+      <DependentUpon>EscrituraVocales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESCRITURA\ReconocerNombre.resx">
+      <DependentUpon>ReconocerNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVALUACION\Evaluacion.resx">
+      <DependentUpon>Evaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVALUACION\EvaluarAlumno.resx">
+      <DependentUpon>EvaluarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LATERALIDAD\Actividad3.resx">
+      <DependentUpon>Actividad3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LATERALIDAD\Actividad1.resx">
+      <DependentUpon>Actividad1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LATERALIDAD\Actividad2.resx">
+      <DependentUpon>Actividad2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LATERALIDAD\Actividad4.resx">
+      <DependentUpon>Actividad4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LATERALIDAD\Actividad5.resx">
+      <DependentUpon>Actividad5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LATERALIDAD\Actividad6.resx">
+      <DependentUpon>Actividad6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LECTURA\Lectura.resx">
+      <DependentUpon>Lectura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LECTURA\RepasoLetras.resx">
+      <DependentUpon>RepasoLetras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEMORIA AUDITIVA\Ejercicio1.resx">
+      <DependentUpon>Ejercicio1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEMORIA AUDITIVA\Sonidos.resx">
+      <DependentUpon>Sonidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOCIONES TEMPORALES\Dias_de_la_semana.resx">
+      <DependentUpon>Dias_de_la_semana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOCIONES TEMPORALES\Dia_Noche.resx">
+      <DependentUpon>Dia_Noche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOCIONES TEMPORALES\Ejercicios_Neuroespaciales.resx">
+      <DependentUpon>Ejercicios_Neuroespaciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRENUMERICOS\Dimensiones.resx">
+      <DependentUpon>Dimensiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRENUMERICOS\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRENUMERICOS\LlenoVacio.resx">
+      <DependentUpon>LlenoVacio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRENUMERICOS\Tamaño.resx">
+      <DependentUpon>Tamaño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Calculo_1.resx">
+      <DependentUpon>Calculo_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReproduceVideo.resx">
+      <DependentUpon>ReproduceVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\EjercicioSensopercepcionAzul.resx">
+      <DependentUpon>EjercicioSensopercepcionAzul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\EjercicioSensopercepcionRojo.resx">
+      <DependentUpon>EjercicioSensopercepcionRojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\EjercicioSensopercepcionRosa.resx">
+      <DependentUpon>EjercicioSensopercepcionRosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\EjercicioSensopercepcionVerde.resx">
+      <DependentUpon>EjercicioSensopercepcionVerde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\InicioSensopercepcion.resx">
+      <DependentUpon>InicioSensopercepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionAmarillo.resx">
+      <DependentUpon>IntroduccionAmarillo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionAzul.resx">
+      <DependentUpon>IntroduccionAzul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionBlanco.resx">
+      <DependentUpon>IntroduccionBlanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionCafe.resx">
+      <DependentUpon>IntroduccionCafe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionMorado.resx">
+      <DependentUpon>IntroduccionMorado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionNaranja.resx">
+      <DependentUpon>IntroduccionNaranja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionNegro.resx">
+      <DependentUpon>IntroduccionNegro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionRojo.resx">
+      <DependentUpon>IntroduccionRojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionRosa.resx">
+      <DependentUpon>IntroduccionRosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENSOPERCEPCION\IntroduccionVerde.resx">
+      <DependentUpon>IntroduccionVerde.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\01005051926.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\circulo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\luna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\moneda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\Reloj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\llanta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\almohada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\bolsa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\caja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\pantalla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\servilleta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DDF\ventana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patrulla.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celular.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caja.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caja_Zapatos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colchon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libreta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repisa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trailer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprobado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peatonal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Licuadora.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Urban.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iglesia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

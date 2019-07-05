@@ -36,6 +36,7 @@ namespace DISCAP.DISCRIMINACION_DE_FORMAS
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            sonido.Stop();
         }
 
         private void Mostrar_Imagenes_Load(object sender, EventArgs e)

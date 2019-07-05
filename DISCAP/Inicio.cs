@@ -67,10 +67,11 @@ namespace DISCAP
 
         private void lblEjercicios_Click(object sender, EventArgs e)
         {
-            ////Categorias ejercicios = new Categorias();
-            ////this.Hide();
-            ////ejercicios.Show();
-            ////ejercicios.setForm(this);
+            Categorias ejercicios = new Categorias();
+            this.Hide();
+            ejercicios.WindowState = FormWindowState.Maximized;
+            ejercicios.Show();
+            ejercicios.setForm(this);
         }
 
         private void btnEvaluar_Click(object sender, EventArgs e)

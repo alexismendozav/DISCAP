@@ -53,11 +53,125 @@
     <Compile Include="Building.Designer.cs">
       <DependentUpon>Building.cs</DependentUpon>
     </Compile>
+    <Compile Include="CALCULO\Anterior2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Anterior2.Designer.cs">
+      <DependentUpon>Anterior2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Anterior3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Anterior3.Designer.cs">
+      <DependentUpon>Anterior3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\CalculoSig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\CalculoSig.Designer.cs">
+      <DependentUpon>CalculoSig.cs</DependentUpon>
+    </Compile>
     <Compile Include="CALCULO\Calculo_1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CALCULO\Calculo_1.Designer.cs">
       <DependentUpon>Calculo_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Division1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Division1.Designer.cs">
+      <DependentUpon>Division1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Division2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Division2.Designer.cs">
+      <DependentUpon>Division2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Division3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Division3.Designer.cs">
+      <DependentUpon>Division3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Multiplicacion1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Multiplicacion1.Designer.cs">
+      <DependentUpon>Multiplicacion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Multiplicacion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Multiplicacion2.Designer.cs">
+      <DependentUpon>Multiplicacion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Multiplicacion3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Multiplicacion3.Designer.cs">
+      <DependentUpon>Multiplicacion3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Posterior1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Posterior1.Designer.cs">
+      <DependentUpon>Posterior1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Posterior2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Posterior2.Designer.cs">
+      <DependentUpon>Posterior2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Posterior3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Posterior3.Designer.cs">
+      <DependentUpon>Posterior3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Resta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Resta1.Designer.cs">
+      <DependentUpon>Resta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Resta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Resta2.Designer.cs">
+      <DependentUpon>Resta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Resta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Resta3.Designer.cs">
+      <DependentUpon>Resta3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Suma1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Suma1.Designer.cs">
+      <DependentUpon>Suma1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Suma2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Suma2.Designer.cs">
+      <DependentUpon>Suma2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CALCULO\Suma3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CALCULO\Suma3.Designer.cs">
+      <DependentUpon>Suma3.cs</DependentUpon>
     </Compile>
     <Compile Include="Categorias.cs">
       <SubType>Form</SubType>
@@ -154,6 +268,12 @@
     </Compile>
     <Compile Include="ESCRITURA\ReconocerNombre.Designer.cs">
       <DependentUpon>ReconocerNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESQUEMA CORPORAL\EsquemaCorporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESQUEMA CORPORAL\EsquemaCorporal.Designer.cs">
+      <DependentUpon>EsquemaCorporal.cs</DependentUpon>
     </Compile>
     <Compile Include="EVALUACION\Evaluacion.cs">
       <SubType>Form</SubType>
@@ -381,6 +501,63 @@
     <EmbeddedResource Include="Building.resx">
       <DependentUpon>Building.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Anterior2.resx">
+      <DependentUpon>Anterior2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Anterior3.resx">
+      <DependentUpon>Anterior3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\CalculoSig.resx">
+      <DependentUpon>CalculoSig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Division1.resx">
+      <DependentUpon>Division1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Division2.resx">
+      <DependentUpon>Division2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Division3.resx">
+      <DependentUpon>Division3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Multiplicacion1.resx">
+      <DependentUpon>Multiplicacion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Multiplicacion2.resx">
+      <DependentUpon>Multiplicacion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Multiplicacion3.resx">
+      <DependentUpon>Multiplicacion3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Posterior1.resx">
+      <DependentUpon>Posterior1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Posterior2.resx">
+      <DependentUpon>Posterior2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Posterior3.resx">
+      <DependentUpon>Posterior3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Resta1.resx">
+      <DependentUpon>Resta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Resta2.resx">
+      <DependentUpon>Resta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Resta3.resx">
+      <DependentUpon>Resta3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Suma1.resx">
+      <DependentUpon>Suma1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Suma2.resx">
+      <DependentUpon>Suma2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CALCULO\Suma3.resx">
+      <DependentUpon>Suma3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>
@@ -428,6 +605,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ESCRITURA\ReconocerNombre.resx">
       <DependentUpon>ReconocerNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESQUEMA CORPORAL\EsquemaCorporal.resx">
+      <DependentUpon>EsquemaCorporal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EVALUACION\Evaluacion.resx">
       <DependentUpon>Evaluacion.cs</DependentUpon>

@@ -69,8 +69,9 @@ namespace DISCAP
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
+            formPrincipal.Show();
             this.Close();
-            formPrincipal.Visible = true;
+
         }
 
         #region Mensajes en los botones 
@@ -142,8 +143,8 @@ namespace DISCAP
 
         private void btnAuditiva_Click(object sender, EventArgs e)
         {
-            Building building = new Building();
-            building.ShowDialog();
+           MEMORIA_AUDITIVA.Sonidos ne=new MEMORIA_AUDITIVA.Sonidos();
+            ne.ShowDialog();
         }
 
         private void btnFormas_Click(object sender, EventArgs e)
@@ -192,8 +193,8 @@ namespace DISCAP
 
         private void btnEsquema_Click(object sender, EventArgs e)
         {
-            Building building = new Building();
-            building.ShowDialog();
+            ESQUEMA_CORPORAL.EsquemaCorporal home = new ESQUEMA_CORPORAL.EsquemaCorporal();
+            home.ShowDialog();
         }
 
         private void btnLectura_Click(object sender, EventArgs e)
@@ -204,8 +205,8 @@ namespace DISCAP
 
         private void btnCalculo_Click(object sender, EventArgs e)
         {
-            Building building = new Building();
-            building.ShowDialog();
+            CALCULO.Calculo_1 menu = new CALCULO.Calculo_1();
+            menu.ShowDialog();
         }
     }
 }

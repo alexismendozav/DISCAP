@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnEvaluar = new System.Windows.Forms.Button();
             this.btnEjercicios = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblEjercicios = new System.Windows.Forms.Label();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,13 +46,10 @@
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnEvaluar, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnEjercicios, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblEjercicios, 1, 1);
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.43009F));
+            this.tableLayoutPanel1.Controls.Add(this.btnEjercicios, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblEjercicios, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(31, 77);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -62,26 +57,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.26216F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(751, 459);
             this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // btnEvaluar
-            // 
-            this.btnEvaluar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEvaluar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEvaluar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnEvaluar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnEvaluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvaluar.Font = new System.Drawing.Font("Montserrat", 20F);
-            this.btnEvaluar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnEvaluar.Image = ((System.Drawing.Image)(resources.GetObject("btnEvaluar.Image")));
-            this.btnEvaluar.Location = new System.Drawing.Point(3, 3);
-            this.btnEvaluar.Name = "btnEvaluar";
-            this.btnEvaluar.Size = new System.Drawing.Size(369, 396);
-            this.btnEvaluar.TabIndex = 1;
-            this.btnEvaluar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEvaluar.UseVisualStyleBackColor = true;
-            this.btnEvaluar.Click += new System.EventHandler(this.btnEvaluar_Click);
             // 
             // btnEjercicios
             // 
@@ -93,32 +68,15 @@
             this.btnEjercicios.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
             this.btnEjercicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEjercicios.Font = new System.Drawing.Font("Montserrat", 20F);
-            this.btnEjercicios.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btnEjercicios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(156)))), ((int)(((byte)(238)))));
             this.btnEjercicios.Image = ((System.Drawing.Image)(resources.GetObject("btnEjercicios.Image")));
-            this.btnEjercicios.Location = new System.Drawing.Point(378, 3);
+            this.btnEjercicios.Location = new System.Drawing.Point(3, 3);
             this.btnEjercicios.Name = "btnEjercicios";
-            this.btnEjercicios.Size = new System.Drawing.Size(370, 396);
+            this.btnEjercicios.Size = new System.Drawing.Size(745, 396);
             this.btnEjercicios.TabIndex = 4;
             this.btnEjercicios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEjercicios.UseVisualStyleBackColor = true;
             this.btnEjercicios.Click += new System.EventHandler(this.btnEjercicios_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(156)))), ((int)(((byte)(238)))));
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 25F);
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(3, 402);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(369, 57);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "EVALUAR";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblEjercicios
             // 
@@ -130,11 +88,11 @@
             this.lblEjercicios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblEjercicios.Font = new System.Drawing.Font("Montserrat", 25F);
             this.lblEjercicios.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblEjercicios.Location = new System.Drawing.Point(378, 402);
+            this.lblEjercicios.Location = new System.Drawing.Point(3, 402);
             this.lblEjercicios.Name = "lblEjercicios";
-            this.lblEjercicios.Size = new System.Drawing.Size(370, 57);
+            this.lblEjercicios.Size = new System.Drawing.Size(745, 57);
             this.lblEjercicios.TabIndex = 5;
-            this.lblEjercicios.Text = "EJERCICIOS";
+            this.lblEjercicios.Text = "COMENZAR";
             this.lblEjercicios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblEjercicios.Click += new System.EventHandler(this.lblEjercicios_Click);
             // 
@@ -159,7 +117,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Moon Flower Bold", 34F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(357, 7);
+            this.label3.Location = new System.Drawing.Point(344, 4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 48);
             this.label3.TabIndex = 7;
@@ -239,9 +197,7 @@
 
         #endregion
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnEvaluar;
         private System.Windows.Forms.Button btnEjercicios;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEjercicios;
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.Button btnInfo;

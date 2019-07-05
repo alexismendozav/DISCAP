@@ -120,5 +120,10 @@ namespace DISCAP.MEMORIA_AUDITIVA
                 case 3: DISCRIMINACION_DE_FORMAS.GoodorBad_Job bad1 = new DISCRIMINACION_DE_FORMAS.GoodorBad_Job(0); bad1.ShowDialog(); break;
             }
         }
+
+        private void Ejercicio1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
